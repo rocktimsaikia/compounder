@@ -1,6 +1,8 @@
 # compounder
 
-A simple compound interest return calculator.
+> A simple compound interest return calculator.
+
+Returns the total compounded value of an investment.
 
 [![CI](https://github.com/rocktimsaikia/compounder/actions/workflows/main.yml/badge.svg)](https://github.com/rocktimsaikia/compounder/actions/workflows/main.yml) | [![npm](https://img.shields.io/npm/v/compounder?color=bright)](https://npmjs.com/package/compounder)
 

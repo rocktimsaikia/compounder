@@ -19,7 +19,7 @@ function calcCompoundInterestReturn({
 	annualInterestRate,
 	years,
 	compoundFrequency = "annually",
-	shouldRound = false,
+	shouldRound = true,
 }: ICompoundInterest) {
 	// Convert the compound frequency to an integer
 	// unless the given value is already a number.

@@ -2,9 +2,7 @@
 
 A simple compound interest return calculator.
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rocktimsaikia/compounder/CI?label=CI&logo=github)](
-
-[![npm](https://img.shields.io/npm/v/compounder?color=bright)](https://npmjs.com/package/compounder)
+[![CI](https://github.com/rocktimsaikia/compounder/actions/workflows/main.yml/badge.svg)](https://github.com/rocktimsaikia/compounder/actions/workflows/main.yml) | [![npm](https://img.shields.io/npm/v/compounder?color=bright)](https://npmjs.com/package/compounder)
 
 ## Installtion
 
@@ -17,17 +15,13 @@ pnpm add compounder
 ```javascript
 import compounder from 'compounder';
 
-const sum = add(1, 2);
+let totalValue = compounder({
+    principal: 25000,
+    annualInterestRate: 12,
+    compoundFrequency: "annually",
+    years: 10,
+});
 
-console.log(sum);
+console.log(totalValue);
+// => 77646
 ```
-
-Outputs:
-
-```sh
-3
-```
-
-## License
-
-MIT &copy; [Rocktim Saikia](https://rocktimsaikia.dev)

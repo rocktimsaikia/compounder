@@ -2,7 +2,7 @@ type CompoundFrequency = "quarterly" | "semi-annually" | "annually" | number;
 
 interface ICompoundInterest {
 	principal: number;
-	annualInterestRate: number;
+	interestRate: number;
 	compoundFrequency?: CompoundFrequency;
 	years: number;
 	shouldRound?: boolean;
@@ -16,7 +16,7 @@ const compoundFrequencyMap = {
 
 function calcCompoundInterestReturn({
 	principal,
-	annualInterestRate,
+	interestRate: annualInterestRate,
 	years,
 	compoundFrequency = "annually",
 	shouldRound = true,

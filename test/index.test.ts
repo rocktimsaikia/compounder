@@ -4,7 +4,7 @@ import compounder from "../src/index";
 test("Should return amount with all decimal values", () => {
 	let result = compounder({
 		principal: 1000,
-		annualInterestRate: 5,
+		interestRate: 5,
 		years: 10,
 		shouldRound: false,
 	});
@@ -14,7 +14,7 @@ test("Should return amount with all decimal values", () => {
 test("Should return rounded amount to the nearest whole number", () => {
 	let result = compounder({
 		principal: 1000,
-		annualInterestRate: 5,
+		interestRate: 5,
 		years: 10,
 		shouldRound: true,
 	});
@@ -22,7 +22,7 @@ test("Should return rounded amount to the nearest whole number", () => {
 
 	result = compounder({
 		principal: 25000,
-		annualInterestRate: 12,
+		interestRate: 12,
 		years: 10,
 		shouldRound: true,
 	});
@@ -32,7 +32,7 @@ test("Should return rounded amount to the nearest whole number", () => {
 test("Should return amount given a pre-defined compounding frequency", () => {
 	let result = compounder({
 		principal: 1000,
-		annualInterestRate: 5,
+		interestRate: 5,
 		compoundFrequency: "semi-annually",
 		years: 10,
 		shouldRound: false,
@@ -43,7 +43,7 @@ test("Should return amount given a pre-defined compounding frequency", () => {
 test("Should return amount given a custom compounding frequency", () => {
 	let result = compounder({
 		principal: 1000,
-		annualInterestRate: 5,
+		interestRate: 5,
 		compoundFrequency: 4,
 		years: 10,
 		shouldRound: false,

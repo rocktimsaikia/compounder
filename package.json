@@ -1,6 +1,6 @@
 {
-	"name": "my-npm-package",
-	"description": "Get country information via currency code",
+	"name": "compounder",
+	"description": "Returns the total compounded value of an investment.",
 	"version": "0.0.0",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -13,11 +13,10 @@
 		"url": "https://rocktimsaikia.dev"
 	},
 	"funding": "https://github.com/sponsors/rocktimsaikia",
-	"repository": "rocktimsaikia/my-npm-package",
+	"repository": "rocktimsaikia/compounder",
 	"scripts": {
 		"build": "tsup",
-		"test": "vitest",
-		"release": "pnpm test && np --no-tests"
+		"test": "vitest"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",
@@ -31,7 +30,15 @@
 	"np": {
 		"contents": "dist"
 	},
-	"keywords": ["my-npm-package"],
+	"keywords": [
+		"compounder",
+		"calculator",
+		"interest",
+		"investment",
+		"savings",
+		"finance",
+		"money"
+	],
 	"tsup": {
 		"entry": ["src/index.ts"],
 		"format": ["cjs", "esm"],

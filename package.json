@@ -1,11 +1,13 @@
 {
 	"name": "compounder",
 	"description": "Returns the total compounded value of an investment.",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"license": "MIT",
 	"author": {
 		"email": "rocktimthedev@gmail.com",
@@ -40,8 +42,13 @@
 		"money"
 	],
 	"tsup": {
-		"entry": ["src/index.ts"],
-		"format": ["cjs", "esm"],
+		"entry": [
+			"src/index.ts"
+		],
+		"format": [
+			"cjs",
+			"esm"
+		],
 		"minify": true,
 		"clean": true,
 		"dts": true

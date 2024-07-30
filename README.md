@@ -9,7 +9,7 @@ Returns the total compounded value of an investment.
 ## Installtion
 
 ```sh
-pnpm add compounder
+npm i compounder
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ The number of years the investment is held for.
 
 > Type: `quarterly` | `semi-annually` | `annually` | `number` \
 Default: `annually`
-> 
+>
 > The frequency of compounding interest. By default, it is annually. \
 If a number is provided, it will be treated as the number of times the interest is compounded in a year.
 
